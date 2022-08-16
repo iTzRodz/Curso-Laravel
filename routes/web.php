@@ -12,9 +12,9 @@ Route::fallback(function () {
     echo 'teste';
 });
 
-Route::get('/',[PrincipalController::class, 'Principal'])->name('index');
-Route::get('/contato', [ContatoController::class, 'Contato'])->name('contato');
-Route::get('/sobreNos',[SobreNosController::class, 'SobreNos'])->name('sobre');
+Route::get('/', [PrincipalController::class, 'Principal'])->name('site.index');
+Route::get('/contato', [ContatoController::class, 'Contato'])->name('site.contato');
+Route::get('/sobreNos', [SobreNosController::class, 'SobreNos'])->name('site.sobrenos');
 
 Route::get('/login', function (){ return 'Rota login';})->name('site.login');
 
