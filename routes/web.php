@@ -13,6 +13,7 @@ Route::fallback(function () {
 
 Route::get('/', [PrincipalController::class, 'Principal'])->name('site.index');
 Route::get('/contato', [ContatoController::class, 'Contato'])->name('site.contato');
+Route::post('/contato', [ContatoController::class, 'Contato'])->name('contato');
 Route::get('/sobreNos', [SobreNosController::class, 'SobreNos'])->name('site.sobrenos');
 
 // Route::get('/login', function (){ return 'Rota login';})->name('site.login');
